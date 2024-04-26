@@ -232,13 +232,16 @@ h1{
 
   .surplus{
     position: absolute;
-    top: 70%;
+    top: 65%;
   }
-
+  
+  #myDiv{
+    width: 120px;
+  }
 
   .display-calories{
     position: absolute;
-    top: 85%;
+    top: 90%;
     right: 10px;
   }
 
