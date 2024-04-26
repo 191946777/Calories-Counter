@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calories Calulator</title>
+  <link rel="stylesheet" href="calories.css">
+</head>
+
+<body>
+  <h1>Calorie Calculator</h1>
+  <div class="container">
+    <div class="heading">
+      Enter Your Details Below
+    </div>
+    <div class="age">
+      <p>Age</p>
+      <input id="age" type="number">
+    </div>
+    <div class="gender">
+      <p>Gender</p>
+      <input id="male" type="checkbox">
+      <p>male</p>
+      <input id="female" type="checkbox">
+      <p>female</p>
+    </div>
+    <div class="height">
+      <p>Height</p>
+      <input id="feet" type="number" placeholder="feet">
+      <input id="inch" type="number" placeholder="inches">
+    </div>
+    <div class="weight">
+      <p>Weight</p>
+      <input id="weight" type="number" placeholder="Pounds">
+    </div>
+    <div class="activity">
+      <p>Exercise</p>
+      <select id="exercise" name="exercise">
+        <option id="value1" value="volvo">Light</option>
+        <option id="value2" value="saab">Moderate</option>
+        <option id="value3" value="fiat">Active</option>
+        <option id="value4" value="audi">Very Active</option>
+      </select>
+    </div>
+    <div class="calculate">
+      <button onclick="calculateCalories()" class="submit">Calculate</button>
+    </div>
+  </div>
+  <div class="display-calories">
+    <div class="maintained-calories">
+      <p>Required Calories</p>
+    </div>
+    <div class="calories-info">
+      <div id="numbers" class="required-calories">
+        NAN
+      </div>
+      <div class="display-info">
+        Calories/day
+      </div>
+    </div>
+  </div>
+  <div class="surplus">
+
+    <div class="weight-info">
+      FOR WEIGHT GAIN 
+    </div>
+    <button id="showButton">Click Here</button>
+    <div id="myDiv">
+      <div class="calories-intake">
+        Calories Surplus
+      </div>
+      <div id="surplus" class="calories-needed">
+        500
+      </div>
+    </div>
+  </div>
+  
+  <script src="calories.js"></script>
+</body>
+
+</html>
